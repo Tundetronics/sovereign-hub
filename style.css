@@ -59,3 +59,37 @@ section {
 .result-item:hover { background: var(--accent); }
 
 footer { text-align: center; padding: 80px 20px; opacity: 0.5; font-size: 0.8rem; border-top: 1px solid var(--border); position: relative; z-index: 10; }
+
+/* --- LIQUID GLASS MEDIA DISPLAYS --- */
+.media-container {
+    margin-top: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.glass-display {
+    width: 100%;
+    max-width: 1000px; /* Ensures they look good on big screens */
+    height: 450px;     /* Fixed height for consistency */
+    object-fit: cover; /* Ensures image fills the area without stretching */
+    border-radius: 24px; /* Matches the glass cards */
+    border: 1px solid var(--border);
+    /* A subtle blue glow to make it look like an active screen */
+    box-shadow: 0 15px 40px rgba(0, 113, 227, 0.15);
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Subtle "Apple-like" lift effect on hover */
+.glass-display:hover {
+    transform: translateY(-5px) scale(1.01);
+    box-shadow: 0 25px 50px rgba(0, 113, 227, 0.3);
+    border-color: var(--accent);
+}
+
+/* Mobile responsiveness for images */
+@media (max-width: 768px) {
+    .glass-display {
+        height: 300px;
+    }
+}
