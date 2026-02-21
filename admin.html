@@ -2,47 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Admin Portal | Sovereign Control</title>
+    <title>Sovereign Command | Editor v2.0</title>
     <link rel="stylesheet" href="style.css">
     <style>
         .admin-box { background: #161617; padding: 40px; border-radius: 20px; border: 1px solid #333; margin-top: 50px; }
         .hidden { display: none; }
-        input { width: 100%; padding: 15px; margin: 10px 0; background: #000; border: 1px solid #444; color: #fff; border-radius: 8px; }
-        button { background: #0071e3; color: #fff; border: none; padding: 15px 30px; border-radius: 8px; cursor: pointer; font-weight: bold; width: 100%; }
+        input, textarea { width: 100%; padding: 15px; margin: 10px 0; background: #000; border: 1px solid #444; color: #fff; border-radius: 8px; font-family: inherit; }
+        button { background: #0071e3; color: #fff; border: none; padding: 15px 30px; border-radius: 8px; cursor: pointer; font-weight: bold; margin-top: 10px; }
         .nav-admin { margin-bottom: 30px; border-bottom: 1px solid #333; padding-bottom: 10px; }
         .nav-admin span { margin-right: 20px; cursor: pointer; opacity: 0.6; }
         .nav-admin span.active { opacity: 1; border-bottom: 2px solid #0071e3; }
+        #json-output { background: #000; color: #00ff00; padding: 15px; font-family: monospace; font-size: 0.8rem; border-radius: 8px; white-space: pre-wrap; margin-top: 20px; }
     </style>
 </head>
 <body>
     <div class="container">
         <div id="login-view" class="admin-box">
             <h2>Sovereign Access Key</h2>
-            <p>Enter your verified engineering key to proceed.</p>
-            <input type="password" id="admin-pass" placeholder="Enter Password">
-            <button onclick="checkAuth()">Login to Hub</button>
+            <input type="password" id="admin-pass" placeholder="Enter Key">
+            <button onclick="checkAuth()">Login</button>
         </div>
 
         <div id="dash-view" class="admin-box hidden">
             <div class="nav-admin">
-                <span onclick="showTab('stats')" class="active">Stats</span>
-                <span onclick="showTab('vault')">Security Vault</span>
+                <span onclick="showTab('stats')" id="btn-stats" class="active">Stats</span>
+                <span onclick="showTab('editor')" id="btn-editor">Project Editor</span>
+                <span onclick="showTab('vault')" id="btn-vault">Security Vault</span>
             </div>
 
             <div id="tab-stats">
                 <h3>Hub Analytics</h3>
-                <p>Status: <span style="color:#00ff00">Active</span></p>
-                <p>Master Key Entries: 10,000 Blueprints Synced.</p>
+                <p>Status: <span style="color:#00ff00">Synchronized</span></p>
+                <p>Archive Capacity: 10,000 Blueprints.</p>
+            </div>
+
+            <div id="tab-editor" class="hidden">
+                <h3>New Project Entry</h3>
+                <input type="text" id="p-id" placeholder="Project ID (e.g., SOV-011)">
+                <input type="text" id="p-title" placeholder="Project Title">
+                <textarea id="p-desc" placeholder="Project Description"></textarea>
+                <input type="text" id="p-tags" placeholder="Tags (comma separated)">
+                <button onclick="generateJSON()">Generate Master Key Data</button>
+                
+                <div id="json-output" class="hidden"></div>
+                <p style="font-size:0.7rem; color:#888; margin-top:10px;">Copy the green text above and paste it into your projects.json file to go live.</p>
             </div>
 
             <div id="tab-vault" class="hidden">
-                <h3>Change Admin Password</h3>
-                <p>Set a new sovereign access key below.</p>
+                <h3>Update Key</h3>
                 <input type="password" id="new-pass" placeholder="New Password">
-                <button onclick="updatePassword()">Update Sovereign Key</button>
+                <button onclick="updatePassword()">Save New Key</button>
             </div>
             
-            <button onclick="logout()" style="margin-top:20px; background:#333;">Logout</button>
+            <button onclick="logout()" style="margin-top:20px; background:#333; width:100%;">Logout</button>
         </div>
     </div>
 
@@ -55,26 +67,33 @@
             if (entered === current) {
                 document.getElementById('login-view').classList.add('hidden');
                 document.getElementById('dash-view').classList.remove('hidden');
-            } else {
-                alert("Unauthorized Access Attempt.");
-            }
+            } else { alert("Access Denied."); }
         }
 
-        function updatePassword() {
-            const newKey = document.getElementById('new-pass').value;
-            if (newKey.length < 5) {
-                alert("Password must be at least 5 characters.");
-                return;
-            }
-            localStorage.setItem('sov_key', newKey);
-            alert("Sovereign Key Updated. Please login with your new password.");
-            location.reload();
+        function generateJSON() {
+            const project = {
+                id: document.getElementById('p-id').value,
+                title: document.getElementById('p-title').value,
+                description: document.getElementById('p-desc').value,
+                tags: document.getElementById('p-tags').value.split(',').map(t => t.trim())
+            };
+            const output = document.getElementById('json-output');
+            output.innerText = JSON.stringify(project, null, 2) + ",";
+            output.classList.remove('hidden');
         }
 
         function showTab(tab) {
-            document.getElementById('tab-stats').classList.add('hidden');
-            document.getElementById('tab-vault').classList.add('hidden');
+            ['stats', 'editor', 'vault'].forEach(t => {
+                document.getElementById('tab-' + t).classList.add('hidden');
+                document.getElementById('btn-' + t).classList.remove('active');
+            });
             document.getElementById('tab-' + tab).classList.remove('hidden');
+            document.getElementById('btn-' + tab).classList.add('active');
+        }
+
+        function updatePassword() {
+            localStorage.setItem('sov_key', document.getElementById('new-pass').value);
+            location.reload();
         }
 
         function logout() { location.reload(); }
