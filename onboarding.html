@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sovereign Onboarding | Technical Parameters</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .onboard-container { max-width: 900px; margin: 80px auto; padding: 20px; }
+        .onboard-card { background: rgba(255,255,255,0.03); backdrop-filter: blur(25px); border: 1px solid rgba(255,255,255,0.1); border-radius: 28px; padding: 50px; }
+        .form-group { margin-bottom: 30px; }
+        label { display: block; font-size: 0.9rem; font-weight: 600; color: var(--accent); margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px; }
+        input, select, textarea { width: 100%; padding: 15px; background: rgba(0,0,0,0.4); border: 1px solid #333; color: #fff; border-radius: 12px; font-family: inherit; }
+        .grid-half { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        button { width: 100%; padding: 20px; background: var(--accent); color: #fff; border: none; border-radius: 12px; font-weight: bold; cursor: pointer; font-size: 1.1rem; }
+    </style>
+</head>
+<body>
+    <header class="glass-header">
+        <div class="logo">OWO-NEXUS</div>
+        <nav><a href="index.html">Sovereign Hub</a></nav>
+    </header>
+
+    <div class="onboard-container">
+        <div class="onboard-card">
+            <h1 style="margin-bottom:10px;">Onboarding Protocol</h1>
+            <p style="opacity:0.6; margin-bottom:40px;">Please provide the technical parameters required for industrial calibration.</p>
+
+            <form name="onboarding-data" data-netlify="true">
+                <div class="form-group">
+                    <label>Engagement Pillar</label>
+                    <select name="pillar">
+                        <option value="ai-logic">Owo-Nexus: AI Logic Synthesis</option>
+                        <option value="solar-infra">Tundetronics: Industrial Solar/Infra</option>
+                        <option value="wellness">GHAWK: Executive Physical Engineering</option>
+                    </select>
+                </div>
+
+                <div class="grid-half">
+                    <div class="form-group">
+                        <label>Contact Principal</label>
+                        <input type="text" name="principal_name" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Business Entity</label>
+                        <input type="text" name="company" placeholder="Organization Name">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Technical Environment (For AI/Solar)</label>
+                    <textarea name="environment" rows="4" placeholder="Describe current tech stack or physical site dimensions..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Primary Constraint / Friction</label>
+                    <textarea name="constraint" rows="3" placeholder="What is the #1 hurdle to your sovereignty?"></textarea>
+                </div>
+
+                <button type="submit">Initialize Deployment</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>Copyright @owonexus-tundetronics / babatunde adesina</footer>
+</body>
+</html>
