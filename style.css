@@ -1,32 +1,36 @@
-:root { --accent: #0071e3; --bg: #000; }
+:root { --accent: #0071e3; --bg: #000; --text: #fff; --dim: #86868b; }
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { background: var(--bg); color: #fff; font-family: sans-serif; overflow-x: hidden; }
+body { background: var(--bg); color: var(--text); font-family: -apple-system, sans-serif; line-height: 1.5; }
 
-/* SHATTER THE GLASS SHIELD */
 header { 
-    position: fixed; top: 0; width: 100%; z-index: 10000; 
-    background: rgba(0,0,0,0.8); backdrop-filter: blur(10px);
-    pointer-events: none; /* Container is invisible to mouse */
-}
-header nav, header .logo, header button, header a { 
-    pointer-events: auto !important; /* Only menu items are clickable */
+    position: fixed; top: 0; width: 100%; padding: 20px 5%; 
+    display: flex; justify-content: space-between; align-items: center;
+    background: rgba(0,0,0,0.8); backdrop-filter: blur(15px); z-index: 1000;
 }
 
-section { 
-    position: relative; z-index: 5; padding: 100px 20px; 
-    pointer-events: auto !important; 
+nav a { color: #fff; text-decoration: none; margin-left: 25px; font-size: 0.9rem; opacity: 0.8; }
+nav a:hover { opacity: 1; color: var(--accent); }
+
+section { padding: 150px 5% 100px; min-height: 80vh; display: flex; align-items: center; }
+.container { max-width: 1100px; margin: 0 auto; width: 100%; }
+
+h1 { font-size: clamp(2.5rem, 8vw, 4.5rem); font-weight: 700; margin-bottom: 20px; letter-spacing: -0.03em; }
+h2 { font-size: 2.5rem; margin-bottom: 20px; color: var(--accent); }
+p { font-size: 1.2rem; color: var(--dim); max-width: 600px; }
+
+.search-box { position: relative; margin-top: 40px; width: 100%; max-width: 500px; }
+#hub-search { 
+    width: 100%; padding: 18px 25px; border-radius: 40px; 
+    background: #1c1c1e; border: 1px solid #333; color: #fff; font-size: 1rem;
 }
 
-#search-results {
-    position: absolute; top: 60px; left: 0; width: 100%;
-    background: #111; border: 1px solid var(--accent);
-    z-index: 99999 !important; display: none;
+#search-results { 
+    position: absolute; top: 70px; width: 100%; background: #1c1c1e; 
+    border-radius: 15px; border: 1px solid #333; z-index: 2000; overflow: hidden;
 }
-
-.search-item { padding: 15px; border-bottom: 1px solid #222; cursor: pointer; }
-.search-item:hover { background: #222; }
 
 footer { 
-    text-align: center; padding: 100px 20px; 
-    border-top: 1px solid #222; position: relative; z-index: 10;
+    text-align: center; padding: 100px 20px; font-size: 0.8rem; color: var(--dim);
+    border-top: 1px solid #1c1c1e;
 }
