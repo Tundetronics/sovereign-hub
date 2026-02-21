@@ -3,55 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sovereign Hub | Owo-Nexus x Tundetronics</title>
+    <title>Sovereign Estate | Owo-Nexus x Tundetronics</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
+    <div class="background-glow"></div>
+
+    <header class="glass-header">
         <div class="logo">OWO-NEXUS</div>
         <nav>
             <a href="#services">Services</a>
             <a href="#archive">Archive</a>
-            <a href="#tundetronics">Infrastructure</a>
-            <a href="ghawk.html">Wellness</a><a href="admin.html">Admin</a>
+            <a href="#tundetronics">Industrial</a>
+            <a href="ghawk.html">Wellness</a>
+            <a href="admin.html" class="admin-btn">Admin</a>
         </nav>
     </header>
 
-    <section id="hero">
-        <div class="container">
-            <h1>The Sovereign Master Key</h1>
-            <p>Architecting AI Logic. Engineering Industrial Power.</p>
-        </div>
-    </section>
-
-    <section id="archive">
-        <div class="container">
-            <h2>The Master Key Archive</h2>
-            <div class="search-box">
-                <input type="text" id="hub-search" placeholder="Search 10,000 Projects...">
-                <div id="search-results"></div>
+    <main>
+        <section id="hero">
+            <div class="glass-card hero-content">
+                <h1>Architecting Sovereignty.</h1>
+                <p>25 Years of Engineering Logic. 10,000 AI Blueprints. One Master Key.</p>
+                <div class="search-container">
+                    <input type="text" id="hub-search" placeholder="Search the Master Key...">
+                    <div id="search-results"></div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="services">
-        <div class="container">
-            <h2>Industrial AI Synthesis</h2>
-            <p>Strategic pivots for Finance, Logistics, and Corporate Infrastructure.</p>
-        </div>
-    </section>
+        <section id="services">
+            <div class="container">
+                <h2 class="section-title">Industrial Logic</h2>
+                <div class="grid">
+                    <div class="glass-card">
+                        <h3>AI Synthesis</h3>
+                        <p>Eliminating operational friction through automated logic audits.</p>
+                    </div>
+                    <div class="glass-card" id="tundetronics">
+                        <h3>Tundetronics</h3>
+                        <p>Solar energy deployment and drone-driven industrial intelligence.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="tundetronics">
-        <div class="container">
-            <h2>Tundetronics Infrastructure</h2>
-            <p>Solar Grids, IT Mastery, and Drone Intelligence.</p>
-        </div>
-    </section>
+        <section id="newsletter">
+            <div class="glass-card newsletter-box">
+                <h2>The Sovereign Dispatch</h2>
+                <p>Weekly intelligence for the 10/10 Executive. No noise. Just logic.</p>
+                <form data-netlify="true" name="newsletter">
+                    <input type="email" name="email" placeholder="executive@company.com" required>
+                    <button type="submit">Join the Alliance</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
     <footer>Copyright @owonexus-tundetronics / babatunde adesina</footer>
 
     <script src="script.js"></script>
 </body>
 </html>
-
