@@ -93,3 +93,64 @@ footer { text-align: center; padding: 80px 20px; opacity: 0.5; font-size: 0.8rem
         height: 300px;
     }
 }
+/* --- LIQUID GLASS MEDIA ENGINE --- */
+.media-container {
+    margin: 40px auto;
+    width: 90%;
+    max-width: 1000px;
+    position: relative;
+    z-index: 1; /* Below the text cards for depth */
+}
+
+.glass-display {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 30px;
+    border: 1px solid rgba(255,255,255,0.15);
+    box-shadow: 0 0 40px rgba(0, 113, 227, 0.2);
+    display: block !important;
+    opacity: 1 !important;
+    transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.glass-display:hover {
+    transform: scale(1.02);
+    border-color: var(--accent);
+    box-shadow: 0 0 60px rgba(0, 113, 227, 0.4);
+}
+
+/* THE STORE INTERFACE */
+.store-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.product-card {
+    background: rgba(255,255,255,0.03);
+    backdrop-filter: blur(25px);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 28px;
+    padding: 30px;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.product-card:hover {
+    background: rgba(255,255,255,0.06);
+    border-color: var(--accent);
+}
+
+.product-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: 0.3s;
+}

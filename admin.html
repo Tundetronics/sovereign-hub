@@ -2,24 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sovereign Command | Intelligence v4.0</title>
+    <title>Sovereign Command | Finance v5.0</title>
     <link rel="stylesheet" href="style.css">
     <style>
         .admin-box { background: #161617; padding: 40px; border-radius: 20px; border: 1px solid #333; margin-top: 50px; }
         .hidden { display: none; }
-        input, select, textarea { width: 100%; padding: 15px; margin: 10px 0; background: #000; border: 1px solid #444; color: #fff; border-radius: 8px; }
-        button { background: #0071e3; color: #fff; border: none; padding: 15px 30px; border-radius: 8px; cursor: pointer; font-weight: bold; margin-top: 10px; }
+        input, select { width: 100%; padding: 15px; margin: 10px 0; background: #000; border: 1px solid #444; color: #fff; border-radius: 8px; }
+        button { background: #0071e3; color: #fff; border: none; padding: 15px 30px; border-radius: 8px; cursor: pointer; font-weight: bold; margin-top: 10px; width: 100%; }
         .nav-admin { margin-bottom: 30px; border-bottom: 1px solid #333; padding-bottom: 10px; overflow-x: auto; white-space: nowrap; }
         .nav-admin span { margin-right: 20px; cursor: pointer; opacity: 0.6; transition: 0.3s; }
         .nav-admin span.active { opacity: 1; border-bottom: 2px solid #0071e3; color: #0071e3; }
         
-        /* INTELLIGENCE VISUALS */
-        .chart-container { margin-top: 20px; }
-        .bar-wrapper { margin-bottom: 20px; }
-        .bar-label { display: flex; justify-content: space-between; margin-bottom: 5px; font-size: 0.9rem; }
-        .bar-bg { background: #333; height: 12px; border-radius: 6px; overflow: hidden; }
-        .bar-fill { background: var(--accent); height: 100%; transition: width 1s ease-in-out; }
-        .intel-card { background: rgba(0, 113, 227, 0.1); border: 1px solid var(--accent); padding: 20px; border-radius: 12px; margin-bottom: 20px; }
+        .price-row { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; border-bottom: 1px solid #222; }
+        #manifest-output { background: #000; color: #00ff00; padding: 15px; font-family: monospace; font-size: 0.8rem; border-radius: 8px; white-space: pre-wrap; margin-top: 20px; }
     </style>
 </head>
 <body>
@@ -33,49 +28,34 @@
         <div id="dash-view" class="admin-box hidden">
             <div class="nav-admin">
                 <span onclick="showTab('stats')" id="btn-stats" class="active">Stats</span>
+                <span onclick="showTab('finance')" id="btn-finance">Finance</span>
                 <span onclick="showTab('intel')" id="btn-intel">Intelligence</span>
                 <span onclick="showTab('editor')" id="btn-editor">Editor</span>
                 <span onclick="showTab('proposal')" id="btn-proposal">Proposal Gen</span>
                 <span onclick="showTab('vault')" id="btn-vault">Security Vault</span>
             </div>
 
-            <div id="tab-stats">
-                <div class="intel-card">
-                    <h3>System Health</h3>
-                    <p>Alliance Status: <span style="color:#00ff00">Fully Operational</span></p>
-                    <p>Archive: 10,000 Blueprints Synced.</p>
-                </div>
-            </div>
+            <div id="tab-stats"><h3>System Online</h3><p>Archive: 10,000 Blueprints Synced.</p></div>
 
-            <div id="tab-intel" class="hidden">
-                <h3>Market Pulse Leaderboard</h3>
-                <p style="margin-bottom:20px; opacity:0.6;">Visualizing audit demand across the Sovereign Alliance.</p>
+            <div id="tab-finance" class="hidden">
+                <h3>Finance Controller</h3>
+                <p style="opacity:0.6; margin-bottom:20px;">Adjust global pricing for Sovereign assets.</p>
                 
-                <div class="chart-container">
-                    <div class="bar-wrapper">
-                        <div class="bar-label"><span>Finance & Logic</span><span>42%</span></div>
-                        <div class="bar-bg"><div class="bar-fill" style="width: 42%;"></div></div>
-                    </div>
-                    <div class="bar-wrapper">
-                        <div class="bar-label"><span>Logistics & Infra</span><span>28%</span></div>
-                        <div class="bar-bg"><div class="bar-fill" style="width: 28%; opacity: 0.8;"></div></div>
-                    </div>
-                    <div class="bar-wrapper">
-                        <div class="bar-label"><span>Industrial Solar</span><span>18%</span></div>
-                        <div class="bar-bg"><div class="bar-fill" style="width: 18%; opacity: 0.6;"></div></div>
-                    </div>
-                    <div class="bar-wrapper">
-                        <div class="bar-label"><span>Corporate AI</span><span>12%</span></div>
-                        <div class="bar-bg"><div class="bar-fill" style="width: 12%; opacity: 0.4;"></div></div>
-                    </div>
-                </div>
+                <div class="price-row"><span>The Profit Architect (Book)</span><input type="text" id="p1" style="width:100px;" value="$49.99"></div>
+                <div class="price-row"><span>The Master Key (Full Access)</span><input type="text" id="p2" style="width:100px;" value="$499.00"></div>
+                <div class="price-row"><span>Sovereign Audit (Consult)</span><input type="text" id="p3" style="width:100px;" value="$1,500.00"></div>
+                <div class="price-row"><span>GHAWK Vitality (Supps)</span><input type="text" id="p4" style="width:100px;" value="Varies"></div>
+                
+                <button onclick="generateManifest()">Generate Pricing Manifest</button>
+                <div id="manifest-output" class="hidden"></div>
             </div>
 
-            <div id="tab-editor" class="hidden">...Editor Content...</div>
-            <div id="tab-proposal" class="hidden">...Proposal Generator...</div>
-            <div id="tab-vault" class="hidden">...Security Vault...</div>
+            <div id="tab-intel" class="hidden">...Intel...</div>
+            <div id="tab-editor" class="hidden">...Editor...</div>
+            <div id="tab-proposal" class="hidden">...Proposal...</div>
+            <div id="tab-vault" class="hidden">...Security...</div>
             
-            <button onclick="logout()" style="margin-top:20px; background:#333; width:100%;">Logout</button>
+            <button onclick="logout()" style="margin-top:20px; background:#333;">Logout</button>
         </div>
     </div>
 
@@ -90,8 +70,20 @@
             } else { alert("Access Denied."); }
         }
 
+        function generateManifest() {
+            const manifest = {
+                profit_architect: document.getElementById('p1').value,
+                master_key: document.getElementById('p2').value,
+                audit: document.getElementById('p3').value,
+                wellness: document.getElementById('p4').value
+            };
+            const output = document.getElementById('manifest-output');
+            output.innerText = "// Copy to pricing.json\n" + JSON.stringify(manifest, null, 2);
+            output.classList.remove('hidden');
+        }
+
         function showTab(tab) {
-            ['stats', 'intel', 'editor', 'proposal', 'vault'].forEach(t => {
+            ['stats', 'finance', 'intel', 'editor', 'proposal', 'vault'].forEach(t => {
                 const el = document.getElementById('tab-' + t);
                 if(el) el.classList.add('hidden');
                 const btn = document.getElementById('btn-' + t);
