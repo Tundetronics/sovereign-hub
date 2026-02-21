@@ -1,52 +1,68 @@
 import json
 import os
+from datetime import datetime
 
+# --- CONFIGURATION ---
 DB_FILE = "projects.json"
 
-def load_projects():
+def load_data():
     if not os.path.exists(DB_FILE):
         return []
     with open(DB_FILE, "r") as f:
         return json.load(f)
 
-def save_projects(projects):
+def save_data(data):
     with open(DB_FILE, "w") as f:
-        json.dump(projects, f, indent=4)
+        json.dump(data, f, indent=4)
 
-def add_project():
-    print("\n--- ADD NEW AI PROJECT ---")
-    title = input("Project Title: ")
-    category = input("Category (e.g., Automation, Finance, Wellness): ")
-    desc = input("Brief Description: ")
+def add_entry():
+    data = load_data()
+    print("\n--- SOVEREIGN COMMAND: MASTER ENTRY (v4.0) ---")
+    print("Select Entry Type:")
+    print("1: Standard AI Project (The Master Key)")
+    print("2: Research Paper (The Nexus)")
+    print("3: Strategic Case Study (The Results)")
     
-    projects = load_projects()
-    new_id = f"AI-{len(projects) + 1:03d}"
+    choice = input("Select (1-3): ")
+    type_map = {"1": "Project", "2": "Research", "3": "Case Study"}
+    entry_type = type_map.get(choice, "Project")
+
+    title = input(f"[{entry_type}] Title: ")
+    category = input("Category/Industry: ")
+    description = input("Description/Result: ")
     
-    projects.append({
-        "id": new_id,
+    new_entry = {
+        "id": f"SOV-{len(data) + 1:03d}",
+        "type": entry_type,
         "title": title,
         "category": category,
-        "description": desc
-    })
+        "description": description,
+        "date": datetime.now().strftime("%Y-%m-%d"),
+        "is_research": (choice == "2")
+    }
     
-    save_projects(projects)
-    print(f"\nSUCCESS: Project {new_id} added to the Master Key.")
+    data.append(new_entry)
+    save_data(data)
+    print(f"\nSUCCESS: {entry_type} added to the Sovereign Estate.")
 
-def sync_to_cloud():
-    print("\nPushing updates to GitHub...")
-    os.system("git add projects.json")
-    os.system('git commit -m "DATA: Updated Project Inventory"')
+def sync_to_hub():
+    print("\nSynchronizing Estate with GitHub...")
+    os.system("git add .")
+    os.system('git commit -m "DATA: Master Synchronization (Projects/Research/Cases)"')
     os.system("git push origin main")
-    print("SYNC COMPLETE: Changes are now live on the Sovereign Hub.")
+    print("\nDEPLOYMENT COMPLETE: Your changes are live.")
 
 if __name__ == "__main__":
     while True:
-        print("\n1. Add Project\n2. Sync to Website\n3. Exit")
-        choice = input("Select an option: ")
+        print("\n--- SOVEREIGN MASTER MANAGER ---")
+        print("1. Add New Entry")
+        print("2. Sync to Global Hub")
+        print("3. Exit")
+        cmd = input("Command > ")
         
-        if choice == "1":
-            add_project()
-        elif choice == "2":
-            sync_to_cloud()
-        elif choice == "3":
+        if cmd == "1":
+            add_entry()
+        elif cmd == "2":
+            sync_to_hub()
+        elif cmd == "3":
             break
