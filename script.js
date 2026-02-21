@@ -1,45 +1,41 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", () => {
+    const searchInput = document.querySelector('input[type="text"]') || document.getElementById('hub-search');
+    const resultsContainer = document.getElementById('search-results');
     let projectDatabase = [];
 
-    // 1. CLEAR LOGIC: Fetch the database relative to the root
+    console.log("Sovereign Engine Initializing...");
+
+    // 1. Load Database
     fetch('./projects.json')
-        .then(response => response.json())
+        .then(res => res.json())
         .then(data => {
             projectDatabase = data;
-            console.log("Master Key Synced: " + data.length + " projects.");
+            console.log("Database Loaded Successfully: " + data.length + " entries.");
         })
-        .catch(err => console.error("Database Link Failure:", err));
+        .catch(err => console.error("CRITICAL: Database Load Failed", err));
 
-    // 2. SEARCH TARGETING
-    const searchInput = document.getElementById('hub-search');
-    const resultsContainer = document.getElementById('search-results');
-
+    // 2. Search Execution
     if (searchInput && resultsContainer) {
+        searchInput.placeholder = "Search 10,000 Projects..."; // Visual confirmation
         searchInput.addEventListener('input', (e) => {
             const query = e.target.value.toLowerCase();
-            resultsContainer.innerHTML = ""; 
+            resultsContainer.innerHTML = "";
+            
+            if (query.length < 2) return;
 
-            if (query.length < 2) {
-                resultsContainer.style.display = "none";
-                return;
-            }
-
-            const filtered = projectDatabase.filter(p => 
+            const matches = projectDatabase.filter(p => 
                 p.title.toLowerCase().includes(query) || 
                 p.tags.some(t => t.toLowerCase().includes(query))
             ).slice(0, 5);
 
-            if (filtered.length > 0) {
-                resultsContainer.style.display = "block";
-                filtered.forEach(p => {
-                    const div = document.createElement('div');
-                    div.style.cssText = "padding:15px; border-bottom:1px solid #333; cursor:pointer; background:#111; color:#fff;";
-                    div.innerHTML = `<strong>${p.id}</strong>: ${p.title}<br><small style='opacity:0.6'>${p.description}</small>`;
-                    resultsContainer.appendChild(div);
-                });
-            } else {
-                resultsContainer.style.display = "none";
-            }
+            matches.forEach(p => {
+                const item = document.createElement('div');
+                item.style.cssText = "padding: 15px; background: #111; border-bottom: 1px solid #333; color: #fff; cursor: pointer;";
+                item.innerHTML = `<strong>${p.id}</strong>: ${p.title}`;
+                resultsContainer.appendChild(item);
+            });
         });
+    } else {
+        console.error("CRITICAL: Search elements not found in HTML.");
     }
 });
