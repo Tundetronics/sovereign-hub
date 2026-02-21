@@ -1,6 +1,12 @@
 [
-    {"title": "Digital Human AI", "description": "AI-driven virtual avatars for automated video marketing."},
-    {"title": "Profit Architect Bot", "description": "Finance-optimized AI for business model auditing."},
-    {"title": "GHAWK Calisthenics", "description": "Predictive algorithms for gymnastics progression."},
-    {"title": "Oriflame Automator", "description": "Lead generation scripts for network marketing scaling."}
+  {"id": "SOV-001", "title": "Logistics Oracle", "description": "Predictive route optimization using real-time traffic and fuel logic.", "tags": ["Logistics", "AI", "Efficiency"]},
+  {"id": "SOV-002", "title": "Finance Ledger Bot", "description": "Automated reconciliation of multi-currency accounts for international trade.", "tags": ["Finance", "Automation", "Accounting"]},
+  {"id": "SOV-003", "title": "Solar Yield Predictor", "description": "AI model to predict battery discharge cycles based on Abuja weather patterns.", "tags": ["Tundetronics", "Solar", "Energy"]},
+  {"id": "SOV-004", "title": "Inventory Ghost-Hunter", "description": "Neural network to identify and eliminate 'ghost' stock in large warehouses.", "tags": ["Logistics", "Data", "AI"]},
+  {"id": "SOV-005", "title": "Smart Estate Perimeter", "description": "IoT sensor mesh integrated with drone rapid-response protocols.", "tags": ["Security", "Drones", "Tundetronics"]},
+  {"id": "SOV-006", "title": "Legal Contract Auditor", "description": "NLP tool to scan MSAs for high-risk liability clauses automatically.", "tags": ["Legal", "NLP", "AI"]},
+  {"id": "SOV-007", "title": "Retail Sentiment Engine", "description": "Analyzes customer feedback to predict stock demand 30 days in advance.", "tags": ["Retail", "AI", "Strategy"]},
+  {"id": "SOV-008", "title": "Executive Health Tracker", "description": "Proprietary GHAWK logic for monitoring high-performance recovery cycles.", "tags": ["Wellness", "GHAWK", "Health"]},
+  {"id": "SOV-009", "title": "Payroll Compression Logic", "description": "Algorithm to reduce payroll processing time by 80% via batch synthesis.", "tags": ["Finance", "HR", "Automation"]},
+  {"id": "SOV-010", "title": "Drone Survey Architect", "description": "Photogrammetry workflow for mapping industrial land for solar farms.", "tags": ["Drones", "Solar", "Engineering"]}
 ]
