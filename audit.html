@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sovereign Audit | Owo-Nexus</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .audit-container { max-width: 800px; margin: 100px auto; }
+        .audit-card { background: rgba(255,255,255,0.03); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.1); border-radius: 24px; padding: 50px; }
+        label { display: block; margin-top: 25px; font-weight: 600; color: var(--accent); }
+        select, input, textarea { width: 100%; padding: 15px; margin-top: 10px; background: rgba(0,0,0,0.5); border: 1px solid #333; color: #fff; border-radius: 8px; }
+        button { width: 100%; margin-top: 30px; padding: 20px; background: var(--accent); color: #fff; border: none; border-radius: 12px; font-weight: bold; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <header class="glass-header">
+        <div class="logo">OWO-NEXUS</div>
+        <nav><a href="index.html">Home</a></nav>
+    </header>
+
+    <div class="audit-container">
+        <div class="audit-card">
+            <h1>Sovereign Audit v1.0</h1>
+            <p>Diagnosing operational friction for industrial scaling.</p>
+            
+            <form name="sovereign-audit" data-netlify="true">
+                <label>01. Sector Focus</label>
+                <select name="sector">
+                    <option>Finance & Logic</option>
+                    <option>Logistics & Infrastructure</option>
+                    <option>Industrial Solar/Energy</option>
+                    <option>Corporate AI Automation</option>
+                </select>
+
+                <label>02. Primary Friction Point</label>
+                <textarea name="friction" placeholder="Where is your organization bleeding margin?"></textarea>
+
+                <label>03. Desired Sovereignty Level</label>
+                <select name="level">
+                    <option>Full Autonomy (AI-Driven)</option>
+                    <option>Hybrid (Infrastructure + Logic)</option>
+                    <option>Consultancy (Audit Only)</option>
+                </select>
+
+                <label>04. Executive Contact</label>
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Corporate Email" required>
+
+                <button type="submit">Submit for Diagnostic</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>Copyright @owonexus-tundetronics / babatunde adesina</footer>
+</body>
+</html>
