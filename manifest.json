@@ -1,0 +1,11 @@
+{
+  "name": "Sovereign Pivot",
+  "short_name": "Sovereign",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#0071e3",
+  "icons": [
+    { "src": "logo.png", "sizes": "192x192", "type": "image/png" }
+  ]
+}
