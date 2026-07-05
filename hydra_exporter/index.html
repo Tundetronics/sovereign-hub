@@ -197,7 +197,7 @@
         let ledger = [];
 
         // Fetch JSON payload
-        fetch('hydra_ledger.json')
+        fetch('hydra_ledger.json?v=' + new Date().getTime())
             .then(r => r.json())
             .then(data => { ledger = data; })
             .catch(e => console.error("Ledger offline"));
@@ -261,6 +261,7 @@
     </script>
 </body>
 </html>
+
 
 
 
