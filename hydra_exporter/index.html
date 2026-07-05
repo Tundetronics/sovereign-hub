@@ -3,152 +3,261 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hydra OS v13.5 | Owo-Nexus Sovereign Hub</title>
+    <title>Hydra OS v13.5 | Owo-Nexus AI</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+        
+        :root {
+            --bg-gradient: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            --glass-bg: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --primary-glow: #00ffcc;
+            --secondary-glow: #bc13fe;
+        }
+
         body {
-            background-color: #050505;
-            color: #00ffcc;
-            font-family: 'Fira Code', 'Courier New', Courier, monospace;
-            padding: 25px;
+            background: var(--bg-gradient);
+            color: #ffffff;
+            font-family: 'Outfit', sans-serif;
             margin: 0;
+            height: 100vh;
             display: flex;
             flex-direction: column;
-            height: 100vh;
+            align-items: center;
             overflow: hidden;
-            text-shadow: 0px 0px 4px rgba(0, 255, 204, 0.5);
-            box-sizing: border-box;
         }
-        .scanlines {
-            background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0) 50%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.2));
-            background-size: 100% 4px;
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            pointer-events: none;
-            z-index: 10;
-        }
-        #terminal {
+
+        .chat-container {
+            width: 100%;
+            max-width: 900px;
             flex-grow: 1;
             overflow-y: auto;
-            padding-bottom: 20px;
-            white-space: pre-wrap;
-            line-height: 1.5;
+            padding: 40px 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            scroll-behavior: smooth;
         }
-        .input-line {
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); border-radius: 10px; }
+
+        .message {
+            max-width: 85%;
+            animation: fadeIn 0.4s ease-out;
+        }
+
+        .message.ai {
+            align-self: flex-start;
+        }
+
+        .message.user {
+            align-self: flex-end;
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            padding: 15px 25px;
+            border-radius: 20px 20px 0 20px;
+            box-shadow: 0 4px 15px rgba(0, 242, 254, 0.2);
+            font-weight: 400;
+        }
+
+        .glass-panel {
+            background: var(--glass-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+        }
+
+        .node-card {
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 12px;
+            padding: 15px;
+            margin-top: 10px;
+            border-left: 4px solid var(--primary-glow);
+            transition: transform 0.2s;
+        }
+        
+        .node-card:hover {
+            transform: translateX(5px);
+            border-left: 4px solid var(--secondary-glow);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            background: rgba(0, 255, 204, 0.1);
+            color: var(--primary-glow);
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        .input-area {
+            width: 100%;
+            max-width: 900px;
+            padding: 20px;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .input-wrapper {
             display: flex;
             align-items: center;
-            margin-top: 10px;
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 30px;
+            padding: 10px 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
         }
-        .prompt {
-            color: #ff0055;
-            margin-right: 12px;
-            font-weight: bold;
-            text-shadow: 0px 0px 4px rgba(255, 0, 85, 0.5);
-        }
+
         input {
+            flex-grow: 1;
             background: transparent;
             border: none;
-            color: #00ffcc;
+            color: white;
             font-family: inherit;
-            font-size: 1rem;
-            flex-grow: 1;
+            font-size: 1.1rem;
+            padding: 10px 15px;
             outline: none;
-            text-shadow: inherit;
         }
-        .header-ascii {
-            color: #0088ff;
-            font-weight: bold;
-            text-shadow: 0px 0px 4px rgba(0, 136, 255, 0.5);
+
+        input::placeholder {
+            color: rgba(255, 255, 255, 0.5);
         }
-        .system-text {
-            color: #ffffff;
+
+        /* 3D Button Styling */
+        .btn-3d {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            border: none;
+            background: linear-gradient(145deg, #ffffff, #e6e6e6);
+            box-shadow:  5px 5px 10px rgba(0,0,0,0.3), 
+                         -2px -2px 10px rgba(255,255,255,0.1),
+                         inset 0 -3px 5px rgba(0,0,0,0.2);
+            color: #0f0c29;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.1s ease;
         }
-        /* Custom Scrollbar for aesthetic */
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #050505; }
-        ::-webkit-scrollbar-thumb { background: #00ffcc; }
+
+        .btn-3d:active {
+            transform: translateY(2px);
+            box-shadow:  2px 2px 5px rgba(0,0,0,0.3), 
+                         -1px -1px 5px rgba(255,255,255,0.1),
+                         inset 0 3px 5px rgba(0,0,0,0.2);
+        }
+
+        .btn-3d svg {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+            transform: translateX(2px);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
     </style>
 </head>
 <body>
-    <div class="scanlines"></div>
-    <div id="terminal">
-        <div class="header-ascii">
-============================================================
-      OWO-NEXUS AI HOLDINGS : HYDRA FACTORY OS v13.5
-             AUTHORIZATION LEVEL: TUNDAY
-============================================================
+
+    <div class="chat-container" id="chat">
+        <div class="message ai glass-panel">
+            <h2 style="margin-top:0; background: -webkit-linear-gradient(#00ffcc, #bc13fe); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Owo-Nexus AI</h2>
+            <p>Welcome to the Sovereign Hub. I am currently monitoring <strong>13,500 active nodes</strong> across the Tri-Sector Demand Matrix.</p>
+            <p>How can I assist you in exploring the registry today? Try searching for terms like <i>"Invisible"</i>, <i>"Corporate"</i>, or <i>"Grid"</i>.</p>
         </div>
-<br>
-<span class="system-text">INITIALIZING HYDRA OS v13.5...</span>
-<span class="system-text">CONNECTING TO DECENTRALIZED REGISTRY...</span>
-<span class="system-text">SUCCESS. 13,500 NODES LOADED.</span>
-<br>
-Type 'HELP' for commands.
-<br><br>
     </div>
-    <div class="input-line">
-        <span class="prompt">root@owo-nexus:~$</span>
-        <input type="text" id="cmd" autocomplete="off" autofocus>
+
+    <div class="input-area">
+        <div class="input-wrapper">
+            <input type="text" id="cmd" placeholder="Ask Hydra to search the registry..." autocomplete="off" autofocus>
+            <button id="sendBtn" class="btn-3d">
+                <svg viewBox="0 0 24 24"><path d="M2,21L23,12L2,3V10L17,12L2,14V21Z"/></svg>
+            </button>
+        </div>
     </div>
 
     <script>
-        const terminal = document.getElementById('terminal');
+        const chat = document.getElementById('chat');
         const input = document.getElementById('cmd');
+        const sendBtn = document.getElementById('sendBtn');
         let ledger = [];
 
-        // Fetch the active JSON payload
+        // Fetch JSON payload
         fetch('hydra_ledger.json')
             .then(r => r.json())
             .then(data => { ledger = data; })
             .catch(e => console.error("Ledger offline"));
 
-        // Force focus on input when clicking anywhere on the background
-        document.body.addEventListener('click', () => input.focus());
+        function appendMessage(sender, content) {
+            const div = document.createElement('div');
+            div.className = `message ${sender} ${sender === 'ai' ? 'glass-panel' : ''}`;
+            div.innerHTML = content;
+            chat.appendChild(div);
+            chat.scrollTop = chat.scrollHeight;
+        }
 
-        input.addEventListener('keypress', function (e) {
-            if (e.key === 'Enter') {
-                const cmd = input.value.trim().toUpperCase();
-                input.value = '';
-                
-                const log = document.createElement('div');
-                log.innerHTML = `<span class="prompt">root@owo-nexus:~$</span> ${cmd}`;
-                terminal.appendChild(log);
+        function processInput() {
+            const val = input.value.trim();
+            if (!val) return;
+            
+            appendMessage('user', val);
+            input.value = '';
 
-                const response = document.createElement('div');
+            setTimeout(() => {
+                const term = val.toUpperCase();
                 
-                if (cmd === 'HELP') {
-                    response.innerHTML = `COMMANDS:<br>SEARCH [KEYWORD] - Search nodes by vertical or ID (e.g., SEARCH INVISIBLE)<br>STATUS           - Display current registry count<br>CLEAR            - Clear terminal`;
-                } else if (cmd === 'STATUS') {
-                    response.innerHTML = `REGISTRY-ANCHORED COUNT: 13500 ACTIVE NODES.`;
-                } else if (cmd === 'CLEAR') {
-                    terminal.innerHTML = '';
-                } else if (cmd.startsWith('SEARCH')) {
-                    const term = cmd.replace('SEARCH', '').trim();
-                    if(!term) {
-                        response.innerHTML = "ERROR: Provide a keyword.";
-                    } else {
-                        const results = ledger.filter(n => 
-                            n.name.toUpperCase().includes(term) || 
-                            n.id.includes(term) || 
-                            n.environment.toUpperCase().includes(term)
-                        ).slice(0, 10); // Return top 10 hits to prevent DOM lag
-                        
-                        if(results.length > 0) {
-                            response.innerHTML = results.map(r => 
-                                `[${r.id}] <span style="color:#ffffff">${r.name}</span> | ENV: ${r.environment} | POINTER: ${r.smart_contract_pointer}`
-                            ).join('<br>');
-                        } else {
-                            response.innerHTML = "NO MATCHES FOUND IN ACTIVE REGISTRY.";
-                        }
-                    }
-                } else if (cmd !== '') {
-                    response.innerHTML = `COMMAND NOT RECOGNIZED: ${cmd}`;
+                // Conversational Easter Eggs
+                if(term === 'STATUS' || term.includes('HOW MANY')) {
+                    appendMessage('ai', `The registry is perfectly synchronized. There are currently <strong>13,500</strong> active, autonomous nodes anchored in the master ledger.`);
+                    return;
                 }
+                if(term === 'CLEAR') {
+                    chat.innerHTML = '';
+                    return;
+                }
+
+                // Core Search Logic
+                const results = ledger.filter(n => 
+                    n.name.toUpperCase().includes(term) || 
+                    n.id.includes(term) || 
+                    n.environment.toUpperCase().includes(term) ||
+                    n.smart_contract_pointer.toUpperCase().includes(term)
+                ).slice(0, 5); // Top 5 results for clean UI
                 
-                terminal.appendChild(response);
-                terminal.appendChild(document.createElement('br'));
-                terminal.scrollTop = terminal.scrollHeight;
-            }
-        });
+                if(results.length > 0) {
+                    let html = `<p>Here are the top results for "<strong>${val}</strong>":</p>`;
+                    results.forEach(r => {
+                        html += `
+                        <div class="node-card">
+                            <span class="badge">${r.environment}</span>
+                            <span class="badge" style="color:#bc13fe; background: rgba(188, 19, 254, 0.1);">${r.id}</span>
+                            <h4 style="margin: 0 0 5px 0;">${r.name}</h4>
+                            <div style="font-size: 0.85rem; color: #ccc;">Pointer: ${r.smart_contract_pointer}</div>
+                        </div>`;
+                    });
+                    appendMessage('ai', html);
+                } else {
+                    appendMessage('ai', `I couldn't find any nodes matching "<strong>${val}</strong>" in the active 13,500-node registry. Try adjusting your search parameters.`);
+                }
+            }, 400); // Simulate AI "thinking" delay
+        }
+
+        input.addEventListener('keypress', e => { if (e.key === 'Enter') processInput(); });
+        sendBtn.addEventListener('click', processInput);
     </script>
 </body>
 </html>
