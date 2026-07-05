@@ -94494,14 +94494,14 @@
   },
   {
     "id": "ATL-013500",
-    "name": "National Infrastructure Self-Funding Auditor",
+    "name": "Autonomous Micro Sentry Node",
     "environment": "Micro",
     "status": "Ready-for-Settlement",
     "smart_contract_pointer": "0x34BC-MICRO-500"
   },
   {
     "id": "ATL-013501",
-    "name": "Personal Decentralized Yield-Stacking Agent",
+    "name": "Autonomous Underground Sentry Node",
     "environment": "Underground",
     "status": "Ready-for-Settlement",
     "smart_contract_pointer": "0x34BD-UNDERGROUND-501"
@@ -94732,7 +94732,7 @@
   },
   {
     "id": "ATL-013534",
-    "name": "Autonomous Cross-Entity Resource-Swapping Sentry",
+    "name": "Autonomous Earth Sentry Node",
     "environment": "Earth",
     "status": "Ready-for-Settlement",
     "smart_contract_pointer": "0x34DE-EARTH-534"
@@ -95194,17 +95194,17 @@
   },
   {
     "id": "ATL-013600",
-    "name": "National Infrastructure Yield-Diversification Auditor",
+    "name": "Autonomous Earth Sentry Node",
     "environment": "Earth",
     "status": "Ready-for-Settlement",
     "smart_contract_pointer": "0x3520-EARTH-600"
   },
   {
     "id": "ATL-013601",
-    "name": "Personal Sovereign Identity-Credentialing Node",
-    "environment": "Invisible",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
     "status": "Ready-for-Settlement",
-    "smart_contract_pointer": "0xIND-IDY-701"
+    "smart_contract_pointer": "0x3521-UNDERWATER-601"
   },
   {
     "id": "ATL-013602",
@@ -95432,10 +95432,10 @@
   },
   {
     "id": "ATL-013634",
-    "name": "Autonomous Inter-Entity Settlement Auditor",
+    "name": "Autonomous Invisible Sentry Node",
     "environment": "Invisible",
     "status": "Ready-for-Settlement",
-    "smart_contract_pointer": "0xCOR-PAY-734"
+    "smart_contract_pointer": "0x3542-INVISIBLE-634"
   },
   {
     "id": "ATL-013635",
@@ -95894,9 +95894,2109 @@
   },
   {
     "id": "ATL-013700",
-    "name": "National Ledger-Integrity Compliance Sentry",
+    "name": "Autonomous Invisible Sentry Node",
     "environment": "Invisible",
     "status": "Ready-for-Settlement",
-    "smart_contract_pointer": "0xGOV-LED-700"
+    "smart_contract_pointer": "0x3584-INVISIBLE-700"
+  },
+  {
+    "id": "ATL-013701",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3585-SPACE-701"
+  },
+  {
+    "id": "ATL-013702",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3586-EARTH-702"
+  },
+  {
+    "id": "ATL-013703",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3587-UNDERWATER-703"
+  },
+  {
+    "id": "ATL-013704",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3588-MICRO-704"
+  },
+  {
+    "id": "ATL-013705",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3589-UNDERGROUND-705"
+  },
+  {
+    "id": "ATL-013706",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x358A-INVISIBLE-706"
+  },
+  {
+    "id": "ATL-013707",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x358B-SPACE-707"
+  },
+  {
+    "id": "ATL-013708",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x358C-EARTH-708"
+  },
+  {
+    "id": "ATL-013709",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x358D-UNDERWATER-709"
+  },
+  {
+    "id": "ATL-013710",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x358E-MICRO-710"
+  },
+  {
+    "id": "ATL-013711",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x358F-UNDERGROUND-711"
+  },
+  {
+    "id": "ATL-013712",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3590-INVISIBLE-712"
+  },
+  {
+    "id": "ATL-013713",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3591-SPACE-713"
+  },
+  {
+    "id": "ATL-013714",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3592-EARTH-714"
+  },
+  {
+    "id": "ATL-013715",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3593-UNDERWATER-715"
+  },
+  {
+    "id": "ATL-013716",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3594-MICRO-716"
+  },
+  {
+    "id": "ATL-013717",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3595-UNDERGROUND-717"
+  },
+  {
+    "id": "ATL-013718",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3596-INVISIBLE-718"
+  },
+  {
+    "id": "ATL-013719",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3597-SPACE-719"
+  },
+  {
+    "id": "ATL-013720",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3598-EARTH-720"
+  },
+  {
+    "id": "ATL-013721",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3599-UNDERWATER-721"
+  },
+  {
+    "id": "ATL-013722",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x359A-MICRO-722"
+  },
+  {
+    "id": "ATL-013723",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x359B-UNDERGROUND-723"
+  },
+  {
+    "id": "ATL-013724",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x359C-INVISIBLE-724"
+  },
+  {
+    "id": "ATL-013725",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x359D-SPACE-725"
+  },
+  {
+    "id": "ATL-013726",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x359E-EARTH-726"
+  },
+  {
+    "id": "ATL-013727",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x359F-UNDERWATER-727"
+  },
+  {
+    "id": "ATL-013728",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35A0-MICRO-728"
+  },
+  {
+    "id": "ATL-013729",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35A1-UNDERGROUND-729"
+  },
+  {
+    "id": "ATL-013730",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35A2-INVISIBLE-730"
+  },
+  {
+    "id": "ATL-013731",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35A3-SPACE-731"
+  },
+  {
+    "id": "ATL-013732",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35A4-EARTH-732"
+  },
+  {
+    "id": "ATL-013733",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35A5-UNDERWATER-733"
+  },
+  {
+    "id": "ATL-013734",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35A6-MICRO-734"
+  },
+  {
+    "id": "ATL-013735",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35A7-UNDERGROUND-735"
+  },
+  {
+    "id": "ATL-013736",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35A8-INVISIBLE-736"
+  },
+  {
+    "id": "ATL-013737",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35A9-SPACE-737"
+  },
+  {
+    "id": "ATL-013738",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35AA-EARTH-738"
+  },
+  {
+    "id": "ATL-013739",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35AB-UNDERWATER-739"
+  },
+  {
+    "id": "ATL-013740",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35AC-MICRO-740"
+  },
+  {
+    "id": "ATL-013741",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35AD-UNDERGROUND-741"
+  },
+  {
+    "id": "ATL-013742",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35AE-INVISIBLE-742"
+  },
+  {
+    "id": "ATL-013743",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35AF-SPACE-743"
+  },
+  {
+    "id": "ATL-013744",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35B0-EARTH-744"
+  },
+  {
+    "id": "ATL-013745",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35B1-UNDERWATER-745"
+  },
+  {
+    "id": "ATL-013746",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35B2-MICRO-746"
+  },
+  {
+    "id": "ATL-013747",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35B3-UNDERGROUND-747"
+  },
+  {
+    "id": "ATL-013748",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35B4-INVISIBLE-748"
+  },
+  {
+    "id": "ATL-013749",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35B5-SPACE-749"
+  },
+  {
+    "id": "ATL-013750",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35B6-EARTH-750"
+  },
+  {
+    "id": "ATL-013751",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35B7-UNDERWATER-751"
+  },
+  {
+    "id": "ATL-013752",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35B8-MICRO-752"
+  },
+  {
+    "id": "ATL-013753",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35B9-UNDERGROUND-753"
+  },
+  {
+    "id": "ATL-013754",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35BA-INVISIBLE-754"
+  },
+  {
+    "id": "ATL-013755",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35BB-SPACE-755"
+  },
+  {
+    "id": "ATL-013756",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35BC-EARTH-756"
+  },
+  {
+    "id": "ATL-013757",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35BD-UNDERWATER-757"
+  },
+  {
+    "id": "ATL-013758",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35BE-MICRO-758"
+  },
+  {
+    "id": "ATL-013759",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35BF-UNDERGROUND-759"
+  },
+  {
+    "id": "ATL-013760",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35C0-INVISIBLE-760"
+  },
+  {
+    "id": "ATL-013761",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35C1-SPACE-761"
+  },
+  {
+    "id": "ATL-013762",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35C2-EARTH-762"
+  },
+  {
+    "id": "ATL-013763",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35C3-UNDERWATER-763"
+  },
+  {
+    "id": "ATL-013764",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35C4-MICRO-764"
+  },
+  {
+    "id": "ATL-013765",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35C5-UNDERGROUND-765"
+  },
+  {
+    "id": "ATL-013766",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35C6-INVISIBLE-766"
+  },
+  {
+    "id": "ATL-013767",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35C7-SPACE-767"
+  },
+  {
+    "id": "ATL-013768",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35C8-EARTH-768"
+  },
+  {
+    "id": "ATL-013769",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35C9-UNDERWATER-769"
+  },
+  {
+    "id": "ATL-013770",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35CA-MICRO-770"
+  },
+  {
+    "id": "ATL-013771",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35CB-UNDERGROUND-771"
+  },
+  {
+    "id": "ATL-013772",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35CC-INVISIBLE-772"
+  },
+  {
+    "id": "ATL-013773",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35CD-SPACE-773"
+  },
+  {
+    "id": "ATL-013774",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35CE-EARTH-774"
+  },
+  {
+    "id": "ATL-013775",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35CF-UNDERWATER-775"
+  },
+  {
+    "id": "ATL-013776",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35D0-MICRO-776"
+  },
+  {
+    "id": "ATL-013777",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35D1-UNDERGROUND-777"
+  },
+  {
+    "id": "ATL-013778",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35D2-INVISIBLE-778"
+  },
+  {
+    "id": "ATL-013779",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35D3-SPACE-779"
+  },
+  {
+    "id": "ATL-013780",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35D4-EARTH-780"
+  },
+  {
+    "id": "ATL-013781",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35D5-UNDERWATER-781"
+  },
+  {
+    "id": "ATL-013782",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35D6-MICRO-782"
+  },
+  {
+    "id": "ATL-013783",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35D7-UNDERGROUND-783"
+  },
+  {
+    "id": "ATL-013784",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35D8-INVISIBLE-784"
+  },
+  {
+    "id": "ATL-013785",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35D9-SPACE-785"
+  },
+  {
+    "id": "ATL-013786",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35DA-EARTH-786"
+  },
+  {
+    "id": "ATL-013787",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35DB-UNDERWATER-787"
+  },
+  {
+    "id": "ATL-013788",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35DC-MICRO-788"
+  },
+  {
+    "id": "ATL-013789",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35DD-UNDERGROUND-789"
+  },
+  {
+    "id": "ATL-013790",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35DE-INVISIBLE-790"
+  },
+  {
+    "id": "ATL-013791",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35DF-SPACE-791"
+  },
+  {
+    "id": "ATL-013792",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35E0-EARTH-792"
+  },
+  {
+    "id": "ATL-013793",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35E1-UNDERWATER-793"
+  },
+  {
+    "id": "ATL-013794",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35E2-MICRO-794"
+  },
+  {
+    "id": "ATL-013795",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35E3-UNDERGROUND-795"
+  },
+  {
+    "id": "ATL-013796",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35E4-INVISIBLE-796"
+  },
+  {
+    "id": "ATL-013797",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35E5-SPACE-797"
+  },
+  {
+    "id": "ATL-013798",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35E6-EARTH-798"
+  },
+  {
+    "id": "ATL-013799",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35E7-UNDERWATER-799"
+  },
+  {
+    "id": "ATL-013800",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35E8-MICRO-800"
+  },
+  {
+    "id": "ATL-013801",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35E9-UNDERGROUND-801"
+  },
+  {
+    "id": "ATL-013802",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35EA-INVISIBLE-802"
+  },
+  {
+    "id": "ATL-013803",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35EB-SPACE-803"
+  },
+  {
+    "id": "ATL-013804",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35EC-EARTH-804"
+  },
+  {
+    "id": "ATL-013805",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35ED-UNDERWATER-805"
+  },
+  {
+    "id": "ATL-013806",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35EE-MICRO-806"
+  },
+  {
+    "id": "ATL-013807",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35EF-UNDERGROUND-807"
+  },
+  {
+    "id": "ATL-013808",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35F0-INVISIBLE-808"
+  },
+  {
+    "id": "ATL-013809",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35F1-SPACE-809"
+  },
+  {
+    "id": "ATL-013810",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35F2-EARTH-810"
+  },
+  {
+    "id": "ATL-013811",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35F3-UNDERWATER-811"
+  },
+  {
+    "id": "ATL-013812",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35F4-MICRO-812"
+  },
+  {
+    "id": "ATL-013813",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35F5-UNDERGROUND-813"
+  },
+  {
+    "id": "ATL-013814",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35F6-INVISIBLE-814"
+  },
+  {
+    "id": "ATL-013815",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35F7-SPACE-815"
+  },
+  {
+    "id": "ATL-013816",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35F8-EARTH-816"
+  },
+  {
+    "id": "ATL-013817",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35F9-UNDERWATER-817"
+  },
+  {
+    "id": "ATL-013818",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35FA-MICRO-818"
+  },
+  {
+    "id": "ATL-013819",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35FB-UNDERGROUND-819"
+  },
+  {
+    "id": "ATL-013820",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35FC-INVISIBLE-820"
+  },
+  {
+    "id": "ATL-013821",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35FD-SPACE-821"
+  },
+  {
+    "id": "ATL-013822",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35FE-EARTH-822"
+  },
+  {
+    "id": "ATL-013823",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x35FF-UNDERWATER-823"
+  },
+  {
+    "id": "ATL-013824",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3600-MICRO-824"
+  },
+  {
+    "id": "ATL-013825",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3601-UNDERGROUND-825"
+  },
+  {
+    "id": "ATL-013826",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3602-INVISIBLE-826"
+  },
+  {
+    "id": "ATL-013827",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3603-SPACE-827"
+  },
+  {
+    "id": "ATL-013828",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3604-EARTH-828"
+  },
+  {
+    "id": "ATL-013829",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3605-UNDERWATER-829"
+  },
+  {
+    "id": "ATL-013830",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3606-MICRO-830"
+  },
+  {
+    "id": "ATL-013831",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3607-UNDERGROUND-831"
+  },
+  {
+    "id": "ATL-013832",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3608-INVISIBLE-832"
+  },
+  {
+    "id": "ATL-013833",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3609-SPACE-833"
+  },
+  {
+    "id": "ATL-013834",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x360A-EARTH-834"
+  },
+  {
+    "id": "ATL-013835",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x360B-UNDERWATER-835"
+  },
+  {
+    "id": "ATL-013836",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x360C-MICRO-836"
+  },
+  {
+    "id": "ATL-013837",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x360D-UNDERGROUND-837"
+  },
+  {
+    "id": "ATL-013838",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x360E-INVISIBLE-838"
+  },
+  {
+    "id": "ATL-013839",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x360F-SPACE-839"
+  },
+  {
+    "id": "ATL-013840",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3610-EARTH-840"
+  },
+  {
+    "id": "ATL-013841",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3611-UNDERWATER-841"
+  },
+  {
+    "id": "ATL-013842",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3612-MICRO-842"
+  },
+  {
+    "id": "ATL-013843",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3613-UNDERGROUND-843"
+  },
+  {
+    "id": "ATL-013844",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3614-INVISIBLE-844"
+  },
+  {
+    "id": "ATL-013845",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3615-SPACE-845"
+  },
+  {
+    "id": "ATL-013846",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3616-EARTH-846"
+  },
+  {
+    "id": "ATL-013847",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3617-UNDERWATER-847"
+  },
+  {
+    "id": "ATL-013848",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3618-MICRO-848"
+  },
+  {
+    "id": "ATL-013849",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3619-UNDERGROUND-849"
+  },
+  {
+    "id": "ATL-013850",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x361A-INVISIBLE-850"
+  },
+  {
+    "id": "ATL-013851",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x361B-SPACE-851"
+  },
+  {
+    "id": "ATL-013852",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x361C-EARTH-852"
+  },
+  {
+    "id": "ATL-013853",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x361D-UNDERWATER-853"
+  },
+  {
+    "id": "ATL-013854",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x361E-MICRO-854"
+  },
+  {
+    "id": "ATL-013855",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x361F-UNDERGROUND-855"
+  },
+  {
+    "id": "ATL-013856",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3620-INVISIBLE-856"
+  },
+  {
+    "id": "ATL-013857",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3621-SPACE-857"
+  },
+  {
+    "id": "ATL-013858",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3622-EARTH-858"
+  },
+  {
+    "id": "ATL-013859",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3623-UNDERWATER-859"
+  },
+  {
+    "id": "ATL-013860",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3624-MICRO-860"
+  },
+  {
+    "id": "ATL-013861",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3625-UNDERGROUND-861"
+  },
+  {
+    "id": "ATL-013862",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3626-INVISIBLE-862"
+  },
+  {
+    "id": "ATL-013863",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3627-SPACE-863"
+  },
+  {
+    "id": "ATL-013864",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3628-EARTH-864"
+  },
+  {
+    "id": "ATL-013865",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3629-UNDERWATER-865"
+  },
+  {
+    "id": "ATL-013866",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x362A-MICRO-866"
+  },
+  {
+    "id": "ATL-013867",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x362B-UNDERGROUND-867"
+  },
+  {
+    "id": "ATL-013868",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x362C-INVISIBLE-868"
+  },
+  {
+    "id": "ATL-013869",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x362D-SPACE-869"
+  },
+  {
+    "id": "ATL-013870",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x362E-EARTH-870"
+  },
+  {
+    "id": "ATL-013871",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x362F-UNDERWATER-871"
+  },
+  {
+    "id": "ATL-013872",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3630-MICRO-872"
+  },
+  {
+    "id": "ATL-013873",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3631-UNDERGROUND-873"
+  },
+  {
+    "id": "ATL-013874",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3632-INVISIBLE-874"
+  },
+  {
+    "id": "ATL-013875",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3633-SPACE-875"
+  },
+  {
+    "id": "ATL-013876",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3634-EARTH-876"
+  },
+  {
+    "id": "ATL-013877",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3635-UNDERWATER-877"
+  },
+  {
+    "id": "ATL-013878",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3636-MICRO-878"
+  },
+  {
+    "id": "ATL-013879",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3637-UNDERGROUND-879"
+  },
+  {
+    "id": "ATL-013880",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3638-INVISIBLE-880"
+  },
+  {
+    "id": "ATL-013881",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3639-SPACE-881"
+  },
+  {
+    "id": "ATL-013882",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x363A-EARTH-882"
+  },
+  {
+    "id": "ATL-013883",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x363B-UNDERWATER-883"
+  },
+  {
+    "id": "ATL-013884",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x363C-MICRO-884"
+  },
+  {
+    "id": "ATL-013885",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x363D-UNDERGROUND-885"
+  },
+  {
+    "id": "ATL-013886",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x363E-INVISIBLE-886"
+  },
+  {
+    "id": "ATL-013887",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x363F-SPACE-887"
+  },
+  {
+    "id": "ATL-013888",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3640-EARTH-888"
+  },
+  {
+    "id": "ATL-013889",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3641-UNDERWATER-889"
+  },
+  {
+    "id": "ATL-013890",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3642-MICRO-890"
+  },
+  {
+    "id": "ATL-013891",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3643-UNDERGROUND-891"
+  },
+  {
+    "id": "ATL-013892",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3644-INVISIBLE-892"
+  },
+  {
+    "id": "ATL-013893",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3645-SPACE-893"
+  },
+  {
+    "id": "ATL-013894",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3646-EARTH-894"
+  },
+  {
+    "id": "ATL-013895",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3647-UNDERWATER-895"
+  },
+  {
+    "id": "ATL-013896",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3648-MICRO-896"
+  },
+  {
+    "id": "ATL-013897",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3649-UNDERGROUND-897"
+  },
+  {
+    "id": "ATL-013898",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x364A-INVISIBLE-898"
+  },
+  {
+    "id": "ATL-013899",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x364B-SPACE-899"
+  },
+  {
+    "id": "ATL-013900",
+    "name": "National Ledger-Efficiency Auditor",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x364C-EARTH-900"
+  },
+  {
+    "id": "ATL-013901",
+    "name": "Personal Predictive-Liquidity Buffer Agent",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0xIND-BUF-001"
+  },
+  {
+    "id": "ATL-013902",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x364E-MICRO-902"
+  },
+  {
+    "id": "ATL-013903",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x364F-UNDERGROUND-903"
+  },
+  {
+    "id": "ATL-013904",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3650-INVISIBLE-904"
+  },
+  {
+    "id": "ATL-013905",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3651-SPACE-905"
+  },
+  {
+    "id": "ATL-013906",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3652-EARTH-906"
+  },
+  {
+    "id": "ATL-013907",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3653-UNDERWATER-907"
+  },
+  {
+    "id": "ATL-013908",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3654-MICRO-908"
+  },
+  {
+    "id": "ATL-013909",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3655-UNDERGROUND-909"
+  },
+  {
+    "id": "ATL-013910",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3656-INVISIBLE-910"
+  },
+  {
+    "id": "ATL-013911",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3657-SPACE-911"
+  },
+  {
+    "id": "ATL-013912",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3658-EARTH-912"
+  },
+  {
+    "id": "ATL-013913",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3659-UNDERWATER-913"
+  },
+  {
+    "id": "ATL-013914",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x365A-MICRO-914"
+  },
+  {
+    "id": "ATL-013915",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x365B-UNDERGROUND-915"
+  },
+  {
+    "id": "ATL-013916",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x365C-INVISIBLE-916"
+  },
+  {
+    "id": "ATL-013917",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x365D-SPACE-917"
+  },
+  {
+    "id": "ATL-013918",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x365E-EARTH-918"
+  },
+  {
+    "id": "ATL-013919",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x365F-UNDERWATER-919"
+  },
+  {
+    "id": "ATL-013920",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3660-MICRO-920"
+  },
+  {
+    "id": "ATL-013921",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3661-UNDERGROUND-921"
+  },
+  {
+    "id": "ATL-013922",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3662-INVISIBLE-922"
+  },
+  {
+    "id": "ATL-013923",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3663-SPACE-923"
+  },
+  {
+    "id": "ATL-013924",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3664-EARTH-924"
+  },
+  {
+    "id": "ATL-013925",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3665-UNDERWATER-925"
+  },
+  {
+    "id": "ATL-013926",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3666-MICRO-926"
+  },
+  {
+    "id": "ATL-013927",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3667-UNDERGROUND-927"
+  },
+  {
+    "id": "ATL-013928",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3668-INVISIBLE-928"
+  },
+  {
+    "id": "ATL-013929",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3669-SPACE-929"
+  },
+  {
+    "id": "ATL-013930",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x366A-EARTH-930"
+  },
+  {
+    "id": "ATL-013931",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x366B-UNDERWATER-931"
+  },
+  {
+    "id": "ATL-013932",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x366C-MICRO-932"
+  },
+  {
+    "id": "ATL-013933",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x366D-UNDERGROUND-933"
+  },
+  {
+    "id": "ATL-013934",
+    "name": "Autonomous Cross-Batch Liquidity-Bridge Sentry",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0xCOR-BRG-034"
+  },
+  {
+    "id": "ATL-013935",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x366F-SPACE-935"
+  },
+  {
+    "id": "ATL-013936",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3670-EARTH-936"
+  },
+  {
+    "id": "ATL-013937",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3671-UNDERWATER-937"
+  },
+  {
+    "id": "ATL-013938",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3672-MICRO-938"
+  },
+  {
+    "id": "ATL-013939",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3673-UNDERGROUND-939"
+  },
+  {
+    "id": "ATL-013940",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3674-INVISIBLE-940"
+  },
+  {
+    "id": "ATL-013941",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3675-SPACE-941"
+  },
+  {
+    "id": "ATL-013942",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3676-EARTH-942"
+  },
+  {
+    "id": "ATL-013943",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3677-UNDERWATER-943"
+  },
+  {
+    "id": "ATL-013944",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3678-MICRO-944"
+  },
+  {
+    "id": "ATL-013945",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3679-UNDERGROUND-945"
+  },
+  {
+    "id": "ATL-013946",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x367A-INVISIBLE-946"
+  },
+  {
+    "id": "ATL-013947",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x367B-SPACE-947"
+  },
+  {
+    "id": "ATL-013948",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x367C-EARTH-948"
+  },
+  {
+    "id": "ATL-013949",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x367D-UNDERWATER-949"
+  },
+  {
+    "id": "ATL-013950",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x367E-MICRO-950"
+  },
+  {
+    "id": "ATL-013951",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x367F-UNDERGROUND-951"
+  },
+  {
+    "id": "ATL-013952",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3680-INVISIBLE-952"
+  },
+  {
+    "id": "ATL-013953",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3681-SPACE-953"
+  },
+  {
+    "id": "ATL-013954",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3682-EARTH-954"
+  },
+  {
+    "id": "ATL-013955",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3683-UNDERWATER-955"
+  },
+  {
+    "id": "ATL-013956",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3684-MICRO-956"
+  },
+  {
+    "id": "ATL-013957",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3685-UNDERGROUND-957"
+  },
+  {
+    "id": "ATL-013958",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3686-INVISIBLE-958"
+  },
+  {
+    "id": "ATL-013959",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3687-SPACE-959"
+  },
+  {
+    "id": "ATL-013960",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3688-EARTH-960"
+  },
+  {
+    "id": "ATL-013961",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3689-UNDERWATER-961"
+  },
+  {
+    "id": "ATL-013962",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x368A-MICRO-962"
+  },
+  {
+    "id": "ATL-013963",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x368B-UNDERGROUND-963"
+  },
+  {
+    "id": "ATL-013964",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x368C-INVISIBLE-964"
+  },
+  {
+    "id": "ATL-013965",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x368D-SPACE-965"
+  },
+  {
+    "id": "ATL-013966",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x368E-EARTH-966"
+  },
+  {
+    "id": "ATL-013967",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x368F-UNDERWATER-967"
+  },
+  {
+    "id": "ATL-013968",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3690-MICRO-968"
+  },
+  {
+    "id": "ATL-013969",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3691-UNDERGROUND-969"
+  },
+  {
+    "id": "ATL-013970",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3692-INVISIBLE-970"
+  },
+  {
+    "id": "ATL-013971",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3693-SPACE-971"
+  },
+  {
+    "id": "ATL-013972",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3694-EARTH-972"
+  },
+  {
+    "id": "ATL-013973",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3695-UNDERWATER-973"
+  },
+  {
+    "id": "ATL-013974",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3696-MICRO-974"
+  },
+  {
+    "id": "ATL-013975",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3697-UNDERGROUND-975"
+  },
+  {
+    "id": "ATL-013976",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3698-INVISIBLE-976"
+  },
+  {
+    "id": "ATL-013977",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x3699-SPACE-977"
+  },
+  {
+    "id": "ATL-013978",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x369A-EARTH-978"
+  },
+  {
+    "id": "ATL-013979",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x369B-UNDERWATER-979"
+  },
+  {
+    "id": "ATL-013980",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x369C-MICRO-980"
+  },
+  {
+    "id": "ATL-013981",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x369D-UNDERGROUND-981"
+  },
+  {
+    "id": "ATL-013982",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x369E-INVISIBLE-982"
+  },
+  {
+    "id": "ATL-013983",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x369F-SPACE-983"
+  },
+  {
+    "id": "ATL-013984",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x36A0-EARTH-984"
+  },
+  {
+    "id": "ATL-013985",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x36A1-UNDERWATER-985"
+  },
+  {
+    "id": "ATL-013986",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x36A2-MICRO-986"
+  },
+  {
+    "id": "ATL-013987",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x36A3-UNDERGROUND-987"
+  },
+  {
+    "id": "ATL-013988",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x36A4-INVISIBLE-988"
+  },
+  {
+    "id": "ATL-013989",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x36A5-SPACE-989"
+  },
+  {
+    "id": "ATL-013990",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x36A6-EARTH-990"
+  },
+  {
+    "id": "ATL-013991",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x36A7-UNDERWATER-991"
+  },
+  {
+    "id": "ATL-013992",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x36A8-MICRO-992"
+  },
+  {
+    "id": "ATL-013993",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x36A9-UNDERGROUND-993"
+  },
+  {
+    "id": "ATL-013994",
+    "name": "Autonomous Invisible Sentry Node",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x36AA-INVISIBLE-994"
+  },
+  {
+    "id": "ATL-013995",
+    "name": "Autonomous Space Sentry Node",
+    "environment": "Space",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x36AB-SPACE-995"
+  },
+  {
+    "id": "ATL-013996",
+    "name": "Autonomous Earth Sentry Node",
+    "environment": "Earth",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x36AC-EARTH-996"
+  },
+  {
+    "id": "ATL-013997",
+    "name": "Autonomous Underwater Sentry Node",
+    "environment": "Underwater",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x36AD-UNDERWATER-997"
+  },
+  {
+    "id": "ATL-013998",
+    "name": "Autonomous Micro Sentry Node",
+    "environment": "Micro",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x36AE-MICRO-998"
+  },
+  {
+    "id": "ATL-013999",
+    "name": "Autonomous Underground Sentry Node",
+    "environment": "Underground",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0x36AF-UNDERGROUND-999"
+  },
+  {
+    "id": "ATL-014000",
+    "name": "National Temporal Resource-Allocation Auditor",
+    "environment": "Invisible",
+    "status": "Ready-for-Settlement",
+    "smart_contract_pointer": "0xGOV-TMP-000"
   }
 ]
