@@ -176,7 +176,7 @@
     <div class="chat-container" id="chat">
         <div class="message ai glass-panel">
             <h2 style="margin-top:0; background: -webkit-linear-gradient(#00ffcc, #bc13fe); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Owo-Nexus AI</h2>
-            <p>Welcome to the Sovereign Hub. I am currently monitoring <strong>13,500 active nodes</strong> across the Tri-Sector Demand Matrix.</p>
+            <p>Welcome to the Sovereign Hub. I am currently monitoring <strong>13,700 active nodes</strong> across the Tri-Sector Demand Matrix.</p>
             <p>How can I assist you in exploring the registry today? Try searching for terms like <i>"Invisible"</i>, <i>"Corporate"</i>, or <i>"Grid"</i>.</p>
         </div>
     </div>
@@ -222,7 +222,7 @@
                 
                 // Conversational Easter Eggs
                 if(term === 'STATUS' || term.includes('HOW MANY')) {
-                    appendMessage('ai', `The registry is perfectly synchronized. There are currently <strong>13,500</strong> active, autonomous nodes anchored in the master ledger.`);
+                    appendMessage('ai', `The registry is perfectly synchronized. There are currently <strong>13,700</strong> active, autonomous nodes anchored in the master ledger.`);
                     return;
                 }
                 if(term === 'CLEAR') {
@@ -251,7 +251,7 @@
                     });
                     appendMessage('ai', html);
                 } else {
-                    appendMessage('ai', `I couldn't find any nodes matching "<strong>${val}</strong>" in the active 13,500-node registry. Try adjusting your search parameters.`);
+                    appendMessage('ai', `I couldn't find any nodes matching "<strong>${val}</strong>" in the active 13,700-node registry. Try adjusting your search parameters.`);
                 }
             }, 400); // Simulate AI "thinking" delay
         }
@@ -261,5 +261,7 @@
     </script>
 </body>
 </html>
+
+
 
 

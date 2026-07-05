@@ -12,7 +12,7 @@ struct Node {
 }
 
 fn main() {
-    let total_nodes = 13500;
+    let total_nodes = 13700;
     let mut ledger: Vec<Node> = Vec::with_capacity(total_nodes);
     let environments = ["Micro", "Underground", "Invisible", "Space", "Earth", "Underwater"];
 
@@ -28,22 +28,26 @@ fn main() {
     }
 
     // --- OVERRIDES: INJECT MASTER KEY PROOFS ---
-    ledger[11999].name = "EOL Solar Array Wing-Lock Sentry".to_string();
-    ledger[12499].name = "National Reservoir Leak-Detection Sentry".to_string();
-    ledger[12999].name = "National Currency Stabilization Audit Node".to_string();
-    
-    // Block 035 Master Keys
-    ledger[13400].name = "Personal Wealth Compounding Engine".to_string();
-    ledger[13400].environment = "Invisible".to_string();
-    ledger[13400].smart_contract_pointer = "0xIND-CMP-501".to_string();
-
-    ledger[13433].name = "Autonomous CAPEX-Recycling Sentry".to_string();
-    ledger[13433].environment = "Invisible".to_string();
-    ledger[13433].smart_contract_pointer = "0xCOR-CAP-534".to_string();
-
+    // Legacy blocks omitted for brevity in compilation script, keeping latest anchors
     ledger[13499].name = "National Infrastructure Self-Funding Auditor".to_string();
-    ledger[13499].environment = "Invisible".to_string();
-    ledger[13499].smart_contract_pointer = "0xGOV-SFN-500".to_string();
+    
+    // Block 036 Master Keys
+    ledger[13500].name = "Personal Decentralized Yield-Stacking Agent".to_string();
+    ledger[13533].name = "Autonomous Cross-Entity Resource-Swapping Sentry".to_string();
+    ledger[13599].name = "National Infrastructure Yield-Diversification Auditor".to_string();
+
+    // Block 037 Master Keys
+    ledger[13600].name = "Personal Sovereign Identity-Credentialing Node".to_string();
+    ledger[13600].environment = "Invisible".to_string();
+    ledger[13600].smart_contract_pointer = "0xIND-IDY-701".to_string();
+
+    ledger[13633].name = "Autonomous Inter-Entity Settlement Auditor".to_string();
+    ledger[13633].environment = "Invisible".to_string();
+    ledger[13633].smart_contract_pointer = "0xCOR-PAY-734".to_string();
+
+    ledger[13699].name = "National Ledger-Integrity Compliance Sentry".to_string();
+    ledger[13699].environment = "Invisible".to_string();
+    ledger[13699].smart_contract_pointer = "0xGOV-LED-700".to_string();
 
     let json_output = serde_json::to_string_pretty(&ledger).expect("Failed to serialize");
     let mut file = File::create("hydra_ledger.json").expect("Failed to create file");
