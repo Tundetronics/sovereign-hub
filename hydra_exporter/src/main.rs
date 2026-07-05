@@ -12,11 +12,9 @@ struct Node {
 }
 
 fn main() {
-    let total_nodes = 14000;
+    let total_nodes = 15300;
     
-    // CORRECTION: Using Type Inference. No angle brackets to get stripped.
     let mut ledger = Vec::with_capacity(total_nodes);
-    
     let environments = ["Micro", "Corporate", "Invisible", "Space", "Grid", "Underwater"];
 
     for i in 1..=total_nodes {
@@ -30,21 +28,21 @@ fn main() {
         });
     }
 
-    // Block 040 Master Keys
-    ledger[13900].name = "Personal Predictive-Liquidity Buffer Agent".to_string();
-    ledger[13900].environment = "Invisible".to_string();
-    ledger[13900].smart_contract_pointer = "0xIND-BUF-001".to_string();
+    // --- BLOCK 053 MASTER KEYS (BIO-INFRASTRUCTURE VERTICAL) ---
+    ledger[15200].name = "Personal Health-Data Privacy Sentry".to_string();
+    ledger[15200].environment = "Invisible".to_string();
+    ledger[15200].smart_contract_pointer = "0xIND-BIO-301".to_string();
 
-    ledger[13933].name = "Autonomous Cross-Batch Liquidity-Bridge Sentry".to_string();
-    ledger[13933].environment = "Corporate".to_string();
-    ledger[13933].smart_contract_pointer = "0xCOR-BRG-034".to_string();
+    ledger[15233].name = "Autonomous Biomanufacturing Regulatory Sentry".to_string();
+    ledger[15233].environment = "Micro".to_string();
+    ledger[15233].smart_contract_pointer = "0xCOR-LAB-334".to_string();
 
-    ledger[13999].name = "National Temporal Resource-Allocation Auditor".to_string();
-    ledger[13999].environment = "Grid".to_string();
-    ledger[13999].smart_contract_pointer = "0xGOV-TMP-000".to_string();
+    ledger[15299].name = "National Bio-Infrastructure Integrity Auditor".to_string();
+    ledger[15299].environment = "Grid".to_string();
+    ledger[15299].smart_contract_pointer = "0xGOV-BIO-300".to_string();
 
     let json_output = serde_json::to_string_pretty(&ledger).expect("Failed to serialize");
     let mut file = File::create("hydra_ledger.json").expect("Failed to create file");
     file.write_all(json_output.as_bytes()).expect("Failed to write");
-    println!("SUCCESS: hydra_ledger.json aligned with UI.");
+    println!("SUCCESS: hydra_ledger.json expanded to 15,300 nodes.");
 }
