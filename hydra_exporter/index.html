@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydra OS | Global Node Ledger</title>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #00ff00;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 20px;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+        #terminal-output {
+            flex-grow: 1;
+            overflow-y: auto;
+            margin-bottom: 20px;
+            white-space: pre-wrap;
+        }
+        .input-line {
+            display: flex;
+            align-items: center;
+        }
+        .prompt { margin-right: 10px; font-weight: bold; }
+        input[type="text"] {
+            background: transparent;
+            border: none;
+            color: #00ff00;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            width: 100%;
+            outline: none;
+        }
+        .node-entry { cursor: pointer; margin-bottom: 5px; opacity: 0.8; }
+        .node-entry:hover { background-color: #00ff00; color: #0a0a0a; opacity: 1; }
+        .error { color: #ff3333; }
+    </style>
+</head>
+<body>
+    <div id="terminal-output">
+        INITIALIZING HYDRA OS v13.5...
+        CONNECTING TO DECENTRALIZED REGISTRY...
+        SUCCESS. 12,200 NODES LOADED.
+        
+        Type 'HELP' for commands.
+        <br><br>
+    </div>
+    <div class="input-line">
+        <span class="prompt">root@owo-nexus:~$</span>
+        <input type="text" id="cmd-input" autocomplete="off" autofocus>
+    </div>
+
+    <script>
+        let ledger = [];
+        const output = document.getElementById('terminal-output');
+        const input = document.getElementById('cmd-input');
+
+        fetch('hydra_ledger.json')
+            .then(res => res.json())
+            .then(data => ledger = data)
+            .catch(err => printLine("ERROR: UNABLE TO LOAD LEDGER PAYLOAD.", "error"));
+
+        function printLine(text, className = "") {
+            const div = document.createElement('div');
+            div.textContent = text;
+            if(className) div.className = className;
+            output.appendChild(div);
+            output.scrollTop = output.scrollHeight;
+        }
+
+        input.addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                const cmd = input.value.trim().toUpperCase();
+                printLine(`root@owo-nexus:~$ ${cmd}`);
+                input.value = '';
+
+                if (cmd === 'HELP') {
+                    printLine("COMMANDS:");
+                    printLine("SEARCH [KEYWORD] - Search nodes by vertical or ID (e.g., SEARCH MICRO)");
+                    printLine("STATUS           - Display current registry count");
+                    printLine("CLEAR            - Clear terminal");
+                } else if (cmd === 'STATUS') {
+                    printLine(`REGISTRY-ANCHORED COUNT: ${ledger.length} ACTIVE NODES.`);
+                } else if (cmd === 'CLEAR') {
+                    output.innerHTML = '';
+                } else if (cmd.startsWith('SEARCH ')) {
+                    const term = cmd.replace('SEARCH ', '').trim();
+                    const results = ledger.filter(n => 
+                        n.environment.toUpperCase().includes(term) || 
+                        n.id.toUpperCase().includes(term)
+                    ).slice(0, 50);
+                    
+                    if (results.length === 0) {
+                        printLine("0 RESULTS FOUND.");
+                    } else {
+                        printLine(`DISPLAYING TOP ${results.length} RESULTS...`);
+                        results.forEach(n => {
+                            const nodeDiv = document.createElement('div');
+                            nodeDiv.className = 'node-entry';
+                            nodeDiv.textContent = `[${n.status}] ${n.id} : ${n.name} | PTR: ${n.smart_contract_pointer}`;
+                            nodeDiv.onclick = () => printLine(`ACCESS DENIED: BLUEPRINT ${n.id} ENCRYPTED. LICENSE REQUIRED TO UNPACK SOVEREIGN CODE.`, "error");
+                            output.appendChild(nodeDiv);
+                        });
+                        output.scrollTop = output.scrollHeight;
+                    }
+                } else {
+                    printLine(`COMMAND NOT RECOGNIZED: ${cmd}`, "error");
+                }
+            }
+        });
+    </script>
+</body>
+</html>
+
+
