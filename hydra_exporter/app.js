@@ -73,7 +73,7 @@ function initiatePaystack() {
     const totalAmountKobo = procureCart.length * NODE_PRICE_NGN * 100;
 
     let handler = PaystackPop.setup({
-        key: 'pk_test_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx', 
+        key: 'pk_test_8e7dc73abb74f1ecc0c0a61f785d1bb26eb3670f', 
         email: email,
         amount: totalAmountKobo,
         currency: 'NGN',
@@ -98,3 +98,4 @@ function triggerBackendEngine(email, reference) {
 }
 
 bootSystem();
+
